@@ -1,4 +1,4 @@
-<script lang="ts">
+<script>
     const suffix = ['the-great', 'the-wild', 'the-silly', 'the-amazing', 'front-end-dev', 'the-dev', 'full-stack-dev']
     let random = Math.floor(Math.random() * suffix.length)
     export let width = 0

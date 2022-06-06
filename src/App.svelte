@@ -1,5 +1,5 @@
 
-<script lang="ts">
+<script>
   import Name from './Name.svelte'
   import Title from './Title.svelte'
   import Link from './Link.svelte'
@@ -12,7 +12,7 @@
 </script>
 <svelte:window bind:innerHeight={height} bind:innerWidth={width} />
 <main class='frame'>
-  <SVG {height} {width} />
+  <SVG {width} />
   <div id='info'>
     <Name />
     <Title />

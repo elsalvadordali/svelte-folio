@@ -1,5 +1,3 @@
-
-
 <h2 class='bottom'>Front-End Developer</h2>
 
 <style>

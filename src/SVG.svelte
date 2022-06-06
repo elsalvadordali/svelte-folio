@@ -1,5 +1,4 @@
-<script lang="ts">
-    export let height
+<script>
     export let width
 
     let fullMoon = new Date('5/16/2022').valueOf()
