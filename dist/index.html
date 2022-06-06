@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tijana Jung front-end developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet"> 
+        <style>
+          body {
+            background-color: #293241;
+            height: 100vh;
+            max-height: 98vh;
+            color: white;
+            border-color: white;
+            font-family: 'Bebas Neue', cursive;
+            font-weight: 300;
+            overflow: hidden;
+            
+          }
+          @media screen and (-webkit-min-device-pixel-ratio:0) {
+            body {
+              letter-spacing: .1em;
+              font-weight: 100;
+            }
+            
+          }
+          .frame {
+            width: 100%;
+            height: 100%;
+          }
+          
+          #info {
+            border-left: 2px solid #f4d35e;
+            margin-left: 35%;
+            width: 65%;
+            height: 100%;
+          }
+         
+          .bottom { border-bottom: 2px solid #f4d35e;}
+          
+          .highlight {
+            background-color: #ee6c4d;
+            padding: 0.25rem .5rem;
+            border-top-left-radius: 1.5vw;
+            border-bottom-right-radius: 1.5vw;
+          }
+          .circle {
+            border: 2 px solid black;
+          }
+          p {
+            margin: 0;
+            padding: 0
+          }
+          a {
+            color: #ccc;
+            margin: 0;
+            padding: 1vw;
+          }
+          a:hover, a:focus {
+            background-color: #8cd3db;
+            color: #555;
+            border-top-left-radius: 15px;
+            border-bottom-right-radius: 15px;
+          }
+
+          ::selection {
+              color: #8cd3db;
+              background: black;
+          }
+          #app {
+            width: 96%;
+            height: 56vw;
+            max-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            border: 2px solid #f4d35e;
+          }
+          @media (orientation: portrait) {
+            body {
+              height: 100vw;
+              max-height: 100%;
+            }
+            #app {
+              transform: rotate(-90deg);
+              transform-origin: bottom left;
+              position: absolute;
+              top: 36vw;
+              left: 62vw;
+              width: 94vw;
+              height: 60vw;
+            
+            }
+          }
+          @media (prefers-color-scheme: light) {
+            body {
+              background-color: #e5e5e5;
+              color: black;
+            }
+            #app {
+              border: 2px solid #8cd3db;
+            }
+            .bottom {
+              border-bottom: 2px solid #8cd3db;
+            }
+            #info {
+              border-left: 2px solid #8cd3db;
+            }
+            a {
+            color: black;
+            }
+            .highlight {
+              background-color: #f7ff58;
+            }
+          }
+    </style>
+    <script type="module" crossorigin src="/assets/index.723dedcf.js"></script>
+    <link rel="stylesheet" href="/assets/index.c5cdd87a.css">
+  </head>
+  <body>
+    <div id="app"></div>
+    
+  </body>
+</html>
