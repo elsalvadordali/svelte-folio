@@ -3,7 +3,7 @@
 <div class="line bottom">
     <h4 class='title'><a href='https://bunnymoney.app/' target="_new">Bunny Money</a></h4>
     <h4>A Progressive Web App that teaches kids financial literacy, 
-        created in svelte.js, typescript. Firebase auth for authentication,
+        created in svelte.js and typescript. Use firebase auth for authentication,
          and firestore for storage.</h4>
 </div>
 
@@ -28,18 +28,14 @@
         width: 25%;
         padding: 2vw .5vw;
         font-family: 'Bebas Neue', cursive;
-        font-weight: 400;
     }
     a:hover, a:focus {
         font-style: italic;
-        background-color: #fe676e;
+        background-color: #f7ff58;
     }
     @media (orientation: portrait) {
-        h4 {
-            font-size: 1.75vh;
-        }
-        .title {
-            font-size: 4vh;
+        a:hover, a:focus {
+            background-color: #fe676e;
         }
     }
 </style>

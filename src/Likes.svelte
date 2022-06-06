@@ -26,5 +26,15 @@
         margin: 0;
         padding: 0;
     }
-    
+    @media (orientation: portrait) {
+        h4 {
+            font-size: 2vw;
+        }
+
+    }
+    @media (orientation: portrait), screen and (min-height: 500px) {
+        h4 {
+            font-size: 3vw;
+        }
+    }
 </style>

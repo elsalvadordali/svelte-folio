@@ -9,13 +9,7 @@
     line-height: 13vw;
     text-align: center;
     margin: 0;
-    padding: 0 0 .5vw 0;
+    padding: 0 0 1.6vw 0;
   }
-  @media (orientation: portrait) {
-    h1 {
-      font-size: 9.5vh;
-      line-height: 11vh;
-      padding-bottom: .5vh;
-    }
-  }
+ 
 </style>

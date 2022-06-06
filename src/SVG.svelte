@@ -3,7 +3,7 @@
     export let width
 
     let fullMoon = new Date('5/16/2022').valueOf()
-    let today = new Date('6/20/2022').valueOf()
+    let today = new Date('6/5/2022').valueOf()
     let difference = (today - fullMoon) / 1000 / 60 / 60 / 24
     while (difference > 29.5) {
         difference -= 29
@@ -13,19 +13,18 @@
     $: y = width / 3
     $: r = width / 7
     $: moonX = (x + r + r) - (r * (percent * 2))
-    
-        
-    console.log(difference)
-</script>
-{moonX.toFixed(3)} //: \<span class='blue'>\\</span>\\
+    </script>
+<p>
+{moonX.toFixed(3)} //: m\<span class='blue'>\\</span>\\
 {percent}
+</p>
 <svg>
-    <circle cx={x} cy={y} r={r} fill='#8cd3db' />
+    <circle cx={x} cy={y} r={r} class='moon'/>
 
-    <circle cx={moonX} cy={y} r={r}  fill='#f4f1de' />
+    <circle cx={moonX} cy={y} r={r} class='shade' />
         
-    <circle cx={x + 4} cy={y - 7} r={r - 5} stroke="black" stroke-width="2" fill="transparent" stroke-dasharray='5 15' stroke-dashoffset='11' class='turn' />
-    <text x={x * .5} y={y * 1.5} font-size={width / 20}>{new Date().getMonth() + 1}/</text>
+    <circle class='dots turn' cx={x + 4} cy={y - 7} r={r - 5} fill="transparent" stroke-dasharray='5 15' stroke-dashoffset='11' />
+    <text x={x * .5} y={y * 1.5} font-size={width / 20} >{new Date().getMonth() + 1}/</text>
     <text x={x * .75} y={y * 1.5} font-size={width * .55} >{new Date().getDate()}</text>
 </svg>
 
@@ -38,10 +37,21 @@
         z-index: -100;
         height: 56vw;
         width: 100%;
-        background-color: #f4f1de;
+        background-color: #1f5d5e;
     }
+    .moon {
+        fill: #f4f1de
+    }
+    .dots {
+        stroke: #db7b65;
+        stroke-width: 4;
+    }
+    .shade {
+        fill: #8cd3db;
+    }
+    
     text {
-        fill: #f7ff58;
+        fill: #4cb3a0;
     }
     @keyframes dash {
         to {
@@ -54,12 +64,27 @@
         animation: dash 1800s linear forwards;
     }
     .blue {
-        color: #8cd3db;
+        color: #ee6c4d;
     }
-    @media (orientation: portrait) {
+    @media (prefers-color-scheme: light) {
         svg {
-            height: 100%;
-            width: 100%;
-        }       
+            background-color: #f4f1de;
+        }
+        .blue {
+            color: #8cd3db;
+        }
+        .shade {
+            fill: #f4f1de
+        }
+        .moon {
+            fill: #8cd3db
+        }
+        .dots {
+        stroke: #000;
+        stroke-width: 2;
+    }
+        text {
+            fill: #f7ff58;
+        }
     }
 </style>

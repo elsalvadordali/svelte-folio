@@ -9,15 +9,8 @@
         padding: .1vw 0 0 0;
         margin: 0;
         font-size: 3.5vw;
-        color: #fe676e;
+        color: #ee6c4d;
         letter-spacing: .2vw;
     }
-    @media (orientation: portrait) {
-    h2 {
-      font-size: 2.5vh;
-      line-height: 3vh;
-      padding-top: .7vh;
-      padding-bottom: .5vh;
-    }
-  }
+   
 </style>
