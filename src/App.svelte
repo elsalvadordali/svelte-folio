@@ -12,7 +12,7 @@
 </script>
 <svelte:window bind:innerHeight={height} bind:innerWidth={width} />
 <main class='frame'>
-  <SVG {width} />
+  <SVG {width} {height} />
   <div id='info'>
     <Name />
     <Title />
@@ -20,7 +20,7 @@
     <Bunny />
     <Likes />
     
-    <Link {width} />
+    <Link {width} {height} />
     
   </div>
 </main>

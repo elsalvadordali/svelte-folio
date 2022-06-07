@@ -12,9 +12,6 @@
         padding-right: .5vw;
         text-decoration: underline;
     }
-    h5:last-of-type .high {
-        padding-left: 1vw;
-    }
     h4 {
         font-size: 3vw;
         margin: 0;
@@ -22,19 +19,29 @@
     }
     h5 {
         display: inline-block;
-        font-size: 2.25vw;
+        font-size: 2vw;
         margin: 0;
         padding: 0;
+        letter-spacing: none;
+    }
+    h5:last-of-type .high {
+        padding-left: 1vw;
     }
     @media (orientation: portrait) {
         h4 {
-            font-size: 2vw;
+            font-size: 3vh;
         }
-
-    }
-    @media (orientation: portrait), screen and (min-height: 500px) {
-        h4 {
-            font-size: 3vw;
+        .box {
+            padding: .5vh;
+        }
+        h5 {
+            font-size: 2.25vh;
+        }
+        .high {
+            padding: 0 1vh;
+        }
+        h5:last-of-type .high {
+            padding-left: 1.5vh;
         }
     }
 </style>

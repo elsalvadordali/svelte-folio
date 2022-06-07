@@ -10,5 +10,11 @@
         color: #ee6c4d;
         letter-spacing: .2vw;
     }
-   
+    @media (orientation: portrait) {
+        h2 {
+            padding-top: .1vh;
+            font-size: 3.5vh;
+            letter-spacing: .2vh;
+        }
+    }
 </style>

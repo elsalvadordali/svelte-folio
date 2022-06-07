@@ -6,11 +6,17 @@
 
     <style>
         h3 {
-            font-size: 2vw;
+            font-size: 1.5vw;
             text-align: center;
-            padding: 1vw 0 .9vw 0;
+            padding: 1.3vw 0;
             margin: 0;
-            word-spacing: .3vw;
+            word-spacing: .1vw;
           }
-        
+        @media (orientation: portrait) {
+            h3 {
+                font-size: 1.75vh;
+                padding: 1.3vh 0;
+                word-spacing: .5vh;
+            }
+        }
     </style>
