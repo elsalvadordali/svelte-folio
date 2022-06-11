@@ -14,15 +14,10 @@
           }
         @media (orientation: portrait) {
             h3 {
-<<<<<<< HEAD
                 font-size: 3.54vw;
                 padding: 1.77vw 0 1.5vw 0;
                 word-spacing: .3vh;
-=======
-                font-size: 1.75vh;
-                padding: 1.3vh 0;
-                word-spacing: .5vh;
->>>>>>> b68329658a023f00dd60e13c85afde760e3dad0b
+
             }
         }
     </style>

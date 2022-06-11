@@ -3,15 +3,15 @@
     let random = Math.floor(Math.random() * suffix.length)
     export let width = 0
     export let height = 0
-    $: radius = width > height ? width / 22 : height / 22
-    $: tri = width > height ? width / 16 : height / 16
+    $: radius = width / 22
+    $: tri = width / 16
 
 </script>
 <a href='mailto:tijano+{suffix[random]}@gmail.com'>
 <svg>
-    <path d="m {width > height ? width / 700 : height / 700} {width > height ? width / 15.75 : height / 15.75} a {tri} {tri} 0 0 0 {tri * 2} 0 a {tri} {tri} 0 0 0 {tri * -2} 0" id='tri' stroke='none' fill='none'></path>
+    <path d="m {width / 700 } { width / 15.75} a {tri} {tri} 0 0 0 {tri * 2} 0 a {tri} {tri} 0 0 0 {tri * -2} 0" id='tri' stroke='none' fill='none'></path>
 
-    <path d="m {width > height ? width / 90 : height / 90} {width > height ? width / 17 : height / 17} a {radius} {radius} 0 0 0 {radius * 2} 0 a {radius} {radius} 0 0 0 {radius * -2} 0" id='link' stroke='none' fill='none'></path>
+    <path d="m {width / 90 } {width / 17} a {radius} {radius} 0 0 0 {radius * 2} 0 a {radius} {radius} 0 0 0 {radius * -2} 0" id='link' stroke='none' fill='none'></path>
 
     <text>
         <textPath href='#link'>contact via e-mail</textPath>
