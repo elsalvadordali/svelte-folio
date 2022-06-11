@@ -14,7 +14,7 @@
     <path d="m {width / 90} {width / 17} a {radius} {radius} 0 0 0 {radius * 2} 0 a {radius} {radius} 0 0 0 {radius * -2} 0" id='link' stroke='none' fill='none'></path>
 
     <text>
-        <textPath href='#link'>tijano@gmail.com</textPath>
+        <textPath href='#link'>contact via e-mail</textPath>
     </text>
     
 </svg>
@@ -37,7 +37,7 @@
 
     text {
         font-size: 2.25vw;
-        letter-spacing: .8vw;
+        letter-spacing: .7vw;
         fill: #ee6c4d;
         stroke-dasharray: 533;
         stroke-dashoffset: 3vw;
@@ -50,6 +50,12 @@
     svg:hover text {
         fill: #f4f1de
     }
-    
+    @media (orientation: portrait) {
+        svg {
+            background-color: #8cd3db;
+            border: 5px dotted #ee6c4d;
+            padding: 0
+        }
+    }
     
 </style>

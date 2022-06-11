@@ -20,7 +20,7 @@
     <Bunny />
     <Likes />
     
-    <Link {width} />
+    <Link {width} {height}/>
     
   </div>
 </main>

@@ -11,5 +11,11 @@
     margin: 0;
     padding: 0 0 1.6vw 0;
   }
+  @media (orientation: portrait) {
+    h1 {
+      font-size: 21.24vw;
+      padding-bottom: 1.6vh;
+    }
+  }
  
 </style>

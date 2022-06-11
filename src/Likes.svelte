@@ -27,14 +27,21 @@
         padding: 0;
     }
     @media (orientation: portrait) {
-        h4 {
-            font-size: 2vw;
+        .box {
+            padding: .885vw;
         }
-
-    }
-    @media (orientation: portrait), screen and (min-height: 500px) {
         h4 {
-            font-size: 3vw;
+            font-size: 5.3vw;
+        }
+        h5 {
+            font-size: 3.95vw;
+        }
+        .high {
+            padding-right: .885vw;
+        }
+        h5:last-of-type .high {
+            padding-left: 1.77vw;
         }
     }
+  
 </style>

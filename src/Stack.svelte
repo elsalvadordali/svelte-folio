@@ -12,5 +12,11 @@
             margin: 0;
             word-spacing: .3vw;
           }
-        
+        @media (orientation: portrait) {
+            h3 {
+                font-size: 3.54vw;
+                padding: 1.77vw 0 1.5vw 0;
+                word-spacing: .3vh;
+            }
+        }
     </style>

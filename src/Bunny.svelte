@@ -34,8 +34,12 @@
         background-color: #f7ff58;
     }
     @media (orientation: portrait) {
-        a:hover, a:focus {
-            background-color: #fe676e;
+        h4 {
+            padding: 1.77vw;
+            font-size: 3.54vw;
+        }
+        .title {
+            font-size: 8.85vw;
         }
     }
 </style>

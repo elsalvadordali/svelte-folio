@@ -9,14 +9,14 @@
         difference -= 29
     }
     let percent = (difference / 14)
-    $: x = width / 6
-    $: y = width / 3
-    $: r = width / 7
+    $: x = width > height ? width / 6 : (width * 1.77) / 6
+    $: y = width > height ? width / 3 : (width * 1.77) / 3
+    $: r = width > height ? width / 7 : (width * 1.77) / 7
     $: moonX = (x + r + r) - (r * (percent * 2))
     </script>
 <p>
 {moonX.toFixed(3)} //: m\<span class='blue'>\\</span>\\
-{percent}
+{percent} 
 </p>
 <svg>
     <circle cx={x} cy={y} r={r} class='moon'/>
@@ -24,8 +24,8 @@
     <circle cx={moonX} cy={y} r={r} class='shade' />
         
     <circle class='dots turn' cx={x + 4} cy={y - 7} r={r - 5} fill="transparent" stroke-dasharray='5 15' stroke-dashoffset='11' />
-    <text x={x * .5} y={y * 1.5} font-size={width / 20} >{new Date().getMonth() + 1}/</text>
-    <text x={x * .75} y={y * 1.5} font-size={width * .55} >{new Date().getDate()}</text>
+    <text x={x * .75} y={y * 1.5} class='day' >{new Date().getMonth() + 1}/</text>
+    <text x={x * .75} y={y * 1.5} class='month'>{new Date().getDate()}</text>
 </svg>
 
 
@@ -65,6 +65,19 @@
     }
     .blue {
         color: #ee6c4d;
+    }      
+    .day {
+        font-size: 11vw;
+    }   
+    .month {
+        font-size: 55vw;
+
+    } 
+    @media (orientation: portrait) {
+        svg {
+            height: 97vw;
+
+        }
     }
     @media (prefers-color-scheme: light) {
         svg {
