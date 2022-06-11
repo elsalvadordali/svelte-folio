@@ -12,9 +12,6 @@
         padding-right: .5vw;
         text-decoration: underline;
     }
-    h5:last-of-type .high {
-        padding-left: 1vw;
-    }
     h4 {
         font-size: 3vw;
         margin: 0;
@@ -22,9 +19,13 @@
     }
     h5 {
         display: inline-block;
-        font-size: 2.25vw;
+        font-size: 2vw;
         margin: 0;
         padding: 0;
+        letter-spacing: none;
+    }
+    h5:last-of-type .high {
+        padding-left: 1vw;
     }
     @media (orientation: portrait) {
         .box {

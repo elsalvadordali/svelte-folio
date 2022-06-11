@@ -17,8 +17,6 @@
             border-color: white;
             font-family: 'Bebas Neue', cursive;
             font-weight: 300;
-            overflow: hidden;
-            
           }
           
           .frame {
@@ -27,13 +25,13 @@
           }
           
           #info {
-            border-left: 2px solid #f4d35e;
+            border-left: 2px solid #e5e5e5;
             margin-left: 35%;
             width: 65%;
             height: 100%;
           }
          
-          .bottom { border-bottom: 2px solid #f4d35e;}
+          .bottom { border-bottom: 2px solid #e5e5e5;}
           
           .highlight {
             background-color: #ee6c4d;
@@ -71,19 +69,25 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            border: 2px solid #e5e5e5;
 
-            border: 2px solid #f4d35e;
           }
+         
           @media (orientation: portrait) {
+
+            body {
+              height: 100vh;
+              max-height: 100%;
+            
+            }
             #app {
-              transform: rotate(-90deg);
+              transform: rotate(90deg);
               transform-origin: bottom left;
               position: absolute;
               top: 77vw;
               left: 100vw;
               width: 170vw;
               height: 98vw;
-            
             }
           }
           @media (prefers-color-scheme: light) {
@@ -111,6 +115,6 @@
   </head>
   <body>
     <div id="app"></div>
-    <script type="module" src="/src/main.ts"></script>
+    <script type="module" src="/src/main.js"></script>
   </body>
 </html>

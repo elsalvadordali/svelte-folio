@@ -1,6 +1,3 @@
-
-
-
 <h1 class='bottom'>Tijana Jung</h1>
 
 <style>

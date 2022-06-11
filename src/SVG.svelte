@@ -1,7 +1,6 @@
-<script lang="ts">
-    export let height
+<script>
     export let width
-
+    export let height 
     let fullMoon = new Date('5/16/2022').valueOf()
     let today = new Date('6/5/2022').valueOf()
     let difference = (today - fullMoon) / 1000 / 60 / 60 / 24
@@ -12,6 +11,7 @@
     $: x = width > height ? width / 6 : (width * 1.77) / 6
     $: y = width > height ? width / 3 : (width * 1.77) / 3
     $: r = width > height ? width / 7 : (width * 1.77) / 7
+
     $: moonX = (x + r + r) - (r * (percent * 2))
     </script>
 <p>
@@ -26,6 +26,7 @@
     <circle class='dots turn' cx={x + 4} cy={y - 7} r={r - 5} fill="transparent" stroke-dasharray='5 15' stroke-dashoffset='11' />
     <text x={x * .75} y={y * 1.5} class='day' >{new Date().getMonth() + 1}/</text>
     <text x={x * .75} y={y * 1.5} class='month'>{new Date().getDate()}</text>
+
 </svg>
 
 
@@ -47,7 +48,7 @@
         stroke-width: 4;
     }
     .shade {
-        fill: #8cd3db;
+        fill: #1f5d5e;
     }
     
     text {
@@ -99,5 +100,12 @@
         text {
             fill: #f7ff58;
         }
+    }
+    @media (orientation: portrait) {
+        svg {
+            height: 100%;
+            z-index: -100;
+        }
+
     }
 </style>
